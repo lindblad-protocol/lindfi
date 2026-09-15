@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0",
+  "network": {
+    "name": "arbitrum-sepolia",
+    "chainId": 421614,
+    "explorer": "https://sepolia.arbiscan.io"
+  },
+  "deployments": {
+    "governanceGuardrailValidation": {
+      "purpose": "governance-guardrail-validation",
+      "environment": "testnet",
+      "address": "0x155931f63859edF2c426080BBf70e10db5406bf1",
+      "transactionHash": "0xeb2570d284fee9d97bc465bc3104d4f04ab49b590e88e70a6416ca407a837067",
+      "blockNumber": 309206489,
+      "verification": {
+        "governance": {
+          "status": "verified",
+          "method": "governance()(address)",
+          "canonicalGovernance": "0x87039DF20338A876FB3b4dbd787816D42eecbACa"
+        }
+      },
+      "checksPerformed": [
+        "pre-broadcast-canonical-governance-verification",
+        "constructor-governance-assignment",
+        "post-deployment-governance-verification"
+      ],
+      "notes": "Testnet validation of the deployment guardrail described in the repository README. Not a production deployment."
+    }
+  }
+}
