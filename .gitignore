@@ -1,0 +1,30 @@
+# --- Environment ----------------------------------------------------------
+.env
+.env.local
+*.env.local
+
+# --- Foundry --------------------------------------------------------------
+cache/
+out/
+# Excluir todos los broadcasts: contienen sender addresses y tx metadata
+# operativa. Los deploys relevantes se documentan en deployments/*.json.
+broadcast/
+
+# --- Backups y temporales ------------------------------------------------
+*.bak
+*.tmp
+*.orig
+
+# --- OS -------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --- Editor ---------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Node (frontend, si se agrega después) -------------------------------
+node_modules/
+dist/
