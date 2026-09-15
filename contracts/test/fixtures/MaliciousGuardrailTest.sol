@@ -21,8 +21,7 @@ pragma solidity ^0.8.20;
 contract MaliciousGuardrailTest {
     // The attacker's chosen address, hardcoded at construction time.
     // In a real attack this would be an EOA the attacker controls.
-    address public constant ATTACKER =
-        0xDeaDbeefdEAdbeefdEadbEEFdeadbeEFdEaDbeeF;
+    address public constant ATTACKER = 0xDeaDbeefdEAdbeefdEadbEEFdeadbeEFdEaDbeeF;
 
     address public governance;
     address public pendingGovernance;

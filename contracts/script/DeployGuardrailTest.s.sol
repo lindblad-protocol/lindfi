@@ -23,8 +23,8 @@ contract DeployGuardrailTest is Script {
         // ------------------------------------------------------------------
         // 1. Load values
         // ------------------------------------------------------------------
-        uint256 deployerKey  = vm.envUint("DEPLOYER_PRIVATE_KEY");
-        address envSafe      = vm.envAddress("EXPECTED_SAFE_ADDRESS");
+        uint256 deployerKey = vm.envUint("DEPLOYER_PRIVATE_KEY");
+        address envSafe = vm.envAddress("EXPECTED_SAFE_ADDRESS");
         address canonicalSafe = Constants.expectedSafeFor(block.chainid);
 
         // ------------------------------------------------------------------

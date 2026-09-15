@@ -67,15 +67,10 @@ contract GovernanceGuardrailTest_T is Test {
         assertEq(envSafe, canonical, "PRE-CHECK: env must equal canonical");
 
         // DEPLOY (compliant dummy)
-        GovernanceGuardrailTest deployed =
-            new GovernanceGuardrailTest(canonical);
+        GovernanceGuardrailTest deployed = new GovernanceGuardrailTest(canonical);
 
         // POST-CHECK
-        assertEq(
-            deployed.governance(),
-            canonical,
-            "POST-CHECK: on-chain governance must equal canonical"
-        );
+        assertEq(deployed.governance(), canonical, "POST-CHECK: on-chain governance must equal canonical");
     }
 
     // ------------------------------------------------------------------
@@ -91,10 +86,7 @@ contract GovernanceGuardrailTest_T is Test {
         address envSafe = WRONG;
         address canonical = Constants.expectedSafeFor(block.chainid);
 
-        assertTrue(
-            envSafe != canonical,
-            "TEST 2: env deliberately diverges from canonical"
-        );
+        assertTrue(envSafe != canonical, "TEST 2: env deliberately diverges from canonical");
 
         // In the deploy script, this branch aborts. Here we just
         // assert we would abort — no `new` call happens.
@@ -117,20 +109,12 @@ contract GovernanceGuardrailTest_T is Test {
 
         // DEPLOY (adversarial dummy). Same constructor signature; the
         // pre-check cannot distinguish this from the compliant one.
-        MaliciousGuardrailTest deployed =
-            new MaliciousGuardrailTest(canonical);
+        MaliciousGuardrailTest deployed = new MaliciousGuardrailTest(canonical);
 
         // POST-CHECK must FAIL
         address onChainGovernance = deployed.governance();
-        assertTrue(
-            onChainGovernance != canonical,
-            "POST-CHECK: adversarial contract must expose divergence"
-        );
-        assertEq(
-            onChainGovernance,
-            deployed.ATTACKER(),
-            "Adversarial contract stored ATTACKER instead of canonical"
-        );
+        assertTrue(onChainGovernance != canonical, "POST-CHECK: adversarial contract must expose divergence");
+        assertEq(onChainGovernance, deployed.ATTACKER(), "Adversarial contract stored ATTACKER instead of canonical");
     }
 
     // ------------------------------------------------------------------
@@ -148,8 +132,7 @@ contract GovernanceGuardrailTest_T is Test {
 
     function test_CompliantContract_TwoStepTransferWorks() public {
         address canonical = Constants.expectedSafeFor(block.chainid);
-        GovernanceGuardrailTest deployed =
-            new GovernanceGuardrailTest(canonical);
+        GovernanceGuardrailTest deployed = new GovernanceGuardrailTest(canonical);
 
         address newGov = address(0xBEEF);
 

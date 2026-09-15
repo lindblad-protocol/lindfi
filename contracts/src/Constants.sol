@@ -12,7 +12,7 @@ library Constants {
     // -----------------------------------------------------------------------
 
     uint256 internal constant CHAIN_ARBITRUM_SEPOLIA = 421614;
-    uint256 internal constant CHAIN_ARBITRUM_ONE     = 42161;
+    uint256 internal constant CHAIN_ARBITRUM_ONE = 42161;
 
     // -----------------------------------------------------------------------
     // Governance Safe — per network
@@ -21,8 +21,7 @@ library Constants {
     /// @notice Arbitrum Sepolia governance Safe (2-of-3 multisig, threshold 2).
     /// @dev Deployed via Safe 1.4.1. Public deployment address:
     ///      https://sepolia.arbiscan.io/address/0x87039DF20338A876FB3b4dbd787816D42eecbACa
-    address internal constant ARBITRUM_SEPOLIA_SAFE =
-        0x87039DF20338A876FB3b4dbd787816D42eecbACa;
+    address internal constant ARBITRUM_SEPOLIA_SAFE = 0x87039DF20338A876FB3b4dbd787816D42eecbACa;
 
     /// @notice Arbitrum One governance Safe — NOT YET DEFINED.
     /// @dev When Arbitrum One deployment happens, the production Safe is a
@@ -46,10 +45,7 @@ library Constants {
             return ARBITRUM_SEPOLIA_SAFE;
         }
         if (chainId == CHAIN_ARBITRUM_ONE) {
-            require(
-                ARBITRUM_ONE_SAFE != address(0),
-                "Constants: Arbitrum One Safe not yet defined"
-            );
+            require(ARBITRUM_ONE_SAFE != address(0), "Constants: Arbitrum One Safe not yet defined");
             return ARBITRUM_ONE_SAFE;
         }
         revert("Constants: unsupported chain id");

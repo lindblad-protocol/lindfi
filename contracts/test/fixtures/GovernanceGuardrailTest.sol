@@ -22,14 +22,8 @@ contract GovernanceGuardrailTest {
     // Events
     // -----------------------------------------------------------------------
 
-    event GovernanceTransferInitiated(
-        address indexed previousGovernance,
-        address indexed newGovernance
-    );
-    event GovernanceTransferred(
-        address indexed previousGovernance,
-        address indexed newGovernance
-    );
+    event GovernanceTransferInitiated(address indexed previousGovernance, address indexed newGovernance);
+    event GovernanceTransferred(address indexed previousGovernance, address indexed newGovernance);
     event GovernanceTransferCancelled(address indexed newGovernance);
 
     // -----------------------------------------------------------------------
