@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import {Constants} from "../src/Constants.sol";
+// Test fixture only.
+// Not part of LindFi production contracts.
+import {Constants} from "../../src/Constants.sol";
 
 /// @notice Helper to place Constants calls in a separate call frame so
 ///         vm.expectRevert() can catch reverts from `internal pure` library

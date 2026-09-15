@@ -3,9 +3,9 @@ pragma solidity ^0.8.20;
 
 import "forge-std/Test.sol";
 import {Constants} from "../src/Constants.sol";
-import {GovernanceGuardrailTest} from "../src/GovernanceGuardrailTest.sol";
-import {MaliciousGuardrailTest} from "../src/MaliciousGuardrailTest.sol";
-import {ConstantsRevertsHelper} from "./ConstantsRevertsHelper.sol";
+import {GovernanceGuardrailTest} from "./fixtures/GovernanceGuardrailTest.sol";
+import {MaliciousGuardrailTest} from "./fixtures/MaliciousGuardrailTest.sol";
+import {ConstantsRevertsHelper} from "./fixtures/ConstantsRevertsHelper.sol";
 
 /// @title GovernanceGuardrailTest_T
 /// @notice Validates the deploy guardrail's three cases as specified in

@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+// Test fixture only.
+// Not part of LindFi production contracts.
 /// @title GovernanceGuardrailTest
 /// @notice Minimal dummy contract implementing the standardized two-step
 ///         governance interface frozen in MVP03A_GOVERNANCE_AMENDMENT_01.md.

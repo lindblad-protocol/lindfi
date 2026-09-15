@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+// Test fixture only.
+// Not part of LindFi production contracts.
 /// @title MaliciousGuardrailTest
 /// @notice Adversarial contract for validating the post-broadcast check.
 /// @dev This contract has the same constructor signature as

@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 import {Script, console2} from "forge-std/Script.sol";
 import {Constants} from "../src/Constants.sol";
-import {GovernanceGuardrailTest} from "../src/GovernanceGuardrailTest.sol";
+import {GovernanceGuardrailTest} from "../test/fixtures/GovernanceGuardrailTest.sol";
 
 /// @title DeployGuardrailTest
 /// @notice Reference implementation of the deploy guardrail specified in
