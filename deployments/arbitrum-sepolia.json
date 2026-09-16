@@ -45,6 +45,34 @@
         "post-deployment-governance-verification"
       ],
       "notes": "MVP-03A LenderRegistry. Contract-source commit 9adebb5. Testnet deployment."
+    },
+    "lenderPolicyRegistry": {
+      "purpose": "mvp-03a-lender-policy-registry",
+      "environment": "testnet",
+      "address": "0xC33bDd53D53eBE675dDd165e3FD2f98227B36398",
+      "transactionHash": "0x34acd7e0c64ed23d9c80c3a4b5d155cc35c6d4bad196873dec108dfc8f7569ac",
+      "blockNumber": 309358468,
+      "verification": {
+        "governance": {
+          "status": "verified",
+          "method": "governance()(address)",
+          "canonicalGovernance": "0x87039DF20338A876FB3b4dbd787816D42eecbACa"
+        },
+        "lenderRegistry": {
+          "status": "verified",
+          "method": "lenderRegistry()(address)",
+          "expected": "0xf55D941bb4FF692B8F0553fA2Fc0350452fA88F7"
+        }
+      },
+      "checksPerformed": [
+        "pre-broadcast-canonical-governance-verification",
+        "pre-broadcast-lender-registry-non-zero-verification",
+        "pre-broadcast-lender-registry-governance-verification",
+        "constructor-governance-triangulation",
+        "post-deployment-governance-verification",
+        "post-deployment-lender-registry-verification"
+      ],
+      "notes": "MVP-03A LenderPolicyRegistry. Contract-source commit 9adebb5. Depends on LenderRegistry from same track. Testnet deployment."
     }
   }
 }
