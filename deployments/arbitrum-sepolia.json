@@ -25,6 +25,26 @@
         "post-deployment-governance-verification"
       ],
       "notes": "Testnet validation of the deployment guardrail described in the repository README. Not a production deployment."
+    },
+    "lenderRegistry": {
+      "purpose": "mvp-03a-lender-registry",
+      "environment": "testnet",
+      "address": "0xf55D941bb4FF692B8F0553fA2Fc0350452fA88F7",
+      "transactionHash": "0x3d9435837ac4eda19b506aea023c8722ab751cd70172751025db37a7e3f3392a",
+      "blockNumber": 309354514,
+      "verification": {
+        "governance": {
+          "status": "verified",
+          "method": "governance()(address)",
+          "canonicalGovernance": "0x87039DF20338A876FB3b4dbd787816D42eecbACa"
+        }
+      },
+      "checksPerformed": [
+        "pre-broadcast-canonical-governance-verification",
+        "constructor-governance-assignment",
+        "post-deployment-governance-verification"
+      ],
+      "notes": "MVP-03A LenderRegistry. Contract-source commit 9adebb5. Testnet deployment."
     }
   }
 }
