@@ -28,3 +28,10 @@ Thumbs.db
 # --- Node (frontend, si se agrega después) -------------------------------
 node_modules/
 dist/
+
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/

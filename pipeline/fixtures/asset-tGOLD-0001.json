@@ -1,0 +1,6 @@
+{
+  "assetId": "tGOLD-0001",
+  "assetSubtype": "GOLD-COMMODITY",
+  "assetJurisdiction": "BO",
+  "notice": "DEMO asset metadata fixture. Synthetic gold asset used to prove the pipeline is asset-agnostic. Not a real asset."
+}

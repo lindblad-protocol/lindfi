@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "policyVersionLabel": "demo-v1",
+  "haircutBps": 2000,
+  "maxLTVBps": 5000,
+  "acceptsDemoAssets": true,
+  "validitySeconds": 2592000,
+  "lasMaxAgeSeconds": 31536000,
+  "navMaxAgeSeconds": 15552000,
+  "allowedCurrencies": ["USD"],
+  "allowedJurisdictions": ["BO"],
+  "allowedSubtypes": ["LI2CO3-COMMODITY", "GOLD-COMMODITY"],
+  "notice": "DEMO POLICY - NOT A REAL LENDER UNDERWRITING POLICY. FIXTURE FOR MVP-03A PIPELINE PREVIEW ONLY. allowedJurisdictions refers to ASSET jurisdictions, not lender jurisdiction."
+}

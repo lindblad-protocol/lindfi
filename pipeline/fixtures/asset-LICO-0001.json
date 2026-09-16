@@ -1,0 +1,6 @@
+{
+  "assetId": "LICO-0001",
+  "assetSubtype": "LI2CO3-COMMODITY",
+  "assetJurisdiction": "BO",
+  "notice": "DEMO asset metadata fixture. In production, assetSubtype and assetJurisdiction would come from the upstream NAV/LAS schema or a governed asset registry. Not a real asset attribution."
+}
