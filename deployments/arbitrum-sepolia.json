@@ -73,6 +73,43 @@
         "post-deployment-lender-registry-verification"
       ],
       "notes": "MVP-03A LenderPolicyRegistry. Contract-source commit 9adebb5. Depends on LenderRegistry from same track. Testnet deployment."
+    },
+    "collateralPositionAnchor": {
+      "purpose": "mvp-03a-collateral-position-anchor",
+      "environment": "testnet",
+      "address": "0xB489376bB9f0455f917D82Cc806DEC51392051DA",
+      "transactionHash": "0xf4d0bce91d00f3abd61c054688d2ee5719b23b3c6c50393e99f00feff4a124d3",
+      "blockNumber": 309362849,
+      "verification": {
+        "governance": {
+          "status": "verified",
+          "method": "governance()(address)",
+          "canonicalGovernance": "0x87039DF20338A876FB3b4dbd787816D42eecbACa"
+        },
+        "lenderRegistry": {
+          "status": "verified",
+          "method": "lenderRegistry()(address)",
+          "expected": "0xf55D941bb4FF692B8F0553fA2Fc0350452fA88F7"
+        },
+        "lenderPolicyRegistry": {
+          "status": "verified",
+          "method": "lenderPolicyRegistry()(address)",
+          "expected": "0xC33bDd53D53eBE675dDd165e3FD2f98227B36398"
+        }
+      },
+      "checksPerformed": [
+        "pre-broadcast-canonical-governance-verification",
+        "pre-broadcast-lender-registry-non-zero-verification",
+        "pre-broadcast-lender-policy-registry-non-zero-verification",
+        "pre-broadcast-lender-registry-governance-verification",
+        "pre-broadcast-lender-policy-registry-governance-verification",
+        "pre-broadcast-lender-policy-registry-registry-pairing-verification",
+        "constructor-triangulation",
+        "post-deployment-governance-verification",
+        "post-deployment-lender-registry-verification",
+        "post-deployment-lender-policy-registry-verification"
+      ],
+      "notes": "MVP-03A CollateralPositionAnchor. Contract-source commit 9adebb5. Depends on LenderRegistry and LenderPolicyRegistry from same track. Testnet deployment."
     }
   }
 }
