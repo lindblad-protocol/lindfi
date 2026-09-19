@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0",
+  "network": "Arbitrum Sepolia",
+  "chainId": 421614,
+  "contractName": "FinancingOfferRegistry",
+  "contractAddress": "0x0327afadbf17e3c2c50eb272f0ae0b1573bb3be5",
+  "deployment": {
+    "transactionHash": "0x39e857f4558d3911f2c8e82ae1e1e99f2238d0507e9d3f451efd331ff25802d0",
+    "blockNumber": 310392015,
+    "blockTimestamp": 1789786425,
+    "deployer": "0xE647Be12719cCD2A0AFb5836e134a859BCa7a7A3",
+    "nonce": 49,
+    "gasUsed": 3457440,
+    "effectiveGasPriceWei": 180816001,
+    "transactionCostWei": 625160474497440,
+    "transactionCostEth": 0.00062516047449744,
+    "transactionCount": 1
+  },
+  "constructorArguments": {
+    "governance": "0x87039DF20338A876FB3b4dbd787816D42eecbACa",
+    "lenderRegistry": "0xf55D941bb4FF692B8F0553fA2Fc0350452fA88F7",
+    "lenderPolicyRegistry": "0xC33bDd53D53eBE675dDd165e3FD2f98227B36398",
+    "collateralPositionAnchor": "0xB489376bB9f0455f917D82Cc806DEC51392051DA"
+  },
+  "codeIdentities": {
+    "sourceSha256": "0cb30283f5ca38460e71772884ec248a04d2e24cbc744fb2d01ddea05feb8771",
+    "creationBytecodeSha256": "c7b5a919aa85e555fcf58826d89c9cf21eb03a9eaaf6f727696e4698ac898e85",
+    "runtimeCodeKeccak": "0x541243ef233c9707c91ee3de7e22f0bfc5a4699e159dec53a351ab24f73f8e1b",
+    "normalizedRuntimeKeccak256": "0xe2a9ef2f84debb0c4158a89e0a5ca66e5357d6274c65fbc2ff0080e7201cc74d",
+    "normalizedRuntimeSha256": "0x68d70c226bd888cd6b56c597f5dc5b1c457a13a7cad469d340ad4324b7cba42c",
+    "runtimeByteLength": 15252,
+    "normalizationRule": "deep copy of the on-chain runtime with ONLY the 32-byte _cachedDomainSeparator immutable at offset 7356 zeroed"
+  },
+  "eip712": {
+    "name": "LindFi FinancingOfferRegistry",
+    "version": "1",
+    "chainId": 421614,
+    "verifyingContract": "0x0327afadbf17e3c2c50eb272f0ae0b1573bb3be5",
+    "domainSeparator": "0xccc093cd98daa0005d1bd8e16b466baacc2e5d729fd2f42e4c9bd5c2a8cff372"
+  },
+  "build": {
+    "solcVersion": "0.8.20",
+    "optimizer": true,
+    "optimizerRuns": 200,
+    "openZeppelinVersion": "v5.1.0",
+    "openZeppelinCommit": "69c8def5f222ff96f2b5beff05dfba996368aa79"
+  },
+  "provenance": {
+    "b5SpecSha256": "4eea6395924b5dbd34ae0368f49936f7441b4b16a455a31fe544343773b67be4",
+    "p2Commit": "f1dfb8af55a1381b82f7c2a774af7cca7a82404a",
+    "p3Commit": "4e60d0e743b4868d52194210ec4313f1048bad38",
+    "p4Commit": "df687a8f90792823556e464b65cb8084a844eb15",
+    "p5aCommit": "dd598930fcc5a2c39be08082d413756d1ef83ccd"
+  },
+  "verification": {
+    "receiptStatus": "success",
+    "wiring": {
+      "governance": "0x87039df20338a876fb3b4dbd787816d42eecbaca",
+      "lenderRegistry": "0xf55d941bb4ff692b8f0553fa2fc0350452fa88f7",
+      "lenderPolicyRegistry": "0xc33bdd53d53ebe675ddd165e3fd2f98227b36398",
+      "collateralPositionAnchor": "0xb489376bb9f0455f917d82cc806dec51392051da"
+    },
+    "balanceWei": 0,
+    "totalOffers": 0,
+    "domainSeparatorIndependentlyRecomputed": true,
+    "normalizedIdentitiesReproduced": true
+  },
+  "notes": {
+    "E1-F26": "console-output transaction parsing caused a post-deployment false negative. Canonical transaction facts are derived from the broadcast artifact and the chain receipt, never from human-oriented console output. Exactly one deployment transaction was broadcast; no retry occurred.",
+    "scope": "Testnet demonstration. No offer has been issued and the contract holds no funds."
+  }
+}
